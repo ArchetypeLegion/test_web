@@ -98,39 +98,8 @@ body{
 	transform: rotate(45deg) translate(0, 50%);
 }
 /*адаптация под мобильные устройства*/
-@media (max-width: 779px) {
-	.burgerMenu {display: flex;}
-	
-	.yogurt{
-		width: 80%;
-	}
-	#main, #about, #contact{
-	background-color: #222831;
-	color: white;
-	text-decoration: none;
-	border: 2px solid white;
-	margin-top: 10px;
-	}
-	.head_menu{
-		display: none;
-		flex-direction: column;
-		position: fixed;
-		height: 10%;
-		width: 50%;
-		overflow-y: auto;
-		padding: 300px 10px;
-		background-color: #393E46;
-		margin-left: 65%;
-		margin-right: 30%;
-	}	
-	.head_menu ul{
-		flex-direction: column;
-		justify-content: space-between;
-		color: #EEEEEE; 
-		
-	}
 
-}
+
 /*слайдер*/
 #first_part{
 	margin-top: 120px;
@@ -281,7 +250,6 @@ input[name="r"] { /*скрытые радио кнопки*/
 
 #third_part{
 	margin-top: 100px;
-	
 	align-items: center;
 	font-family: FreeMono, monospace;
 	font-size: 2em;
@@ -293,4 +261,177 @@ input[name="r"] { /*скрытые радио кнопки*/
 	height: 150px;
 	width: 100%;
 	bottom: 0;
+}
+@media (max-width: 1000px) {
+	.burgerMenu {display: flex;}
+	
+	.yogurt{
+		width: 80%;
+	}
+	#main, #about, #contact{
+	background-color: #222831;
+	color: white;
+	text-decoration: none;
+	border: 2px solid white;
+	margin-top: 10px;
+	}
+	.head_menu{
+		display: none;
+		flex-direction: column;
+		position: fixed;
+		height: 10%;
+		width: 50%;
+		overflow-y: auto;
+		padding: 300px 10px;
+		background-color: #393E46;
+		margin-left: 65%;
+		margin-right: 30%;
+	}	
+	.head_menu ul{
+		flex-direction: column;
+		justify-content: space-between;
+		color: #EEEEEE; 
+		
+	}
+	#first_part{
+		margin-top: 100px;
+		margin-left: 220px;
+		font-size: 1.5em;
+		color: #EEEEEE;
+		flex-wrap: wrap;
+		text-align: center;
+		font-family: FreeMono, monospace;
+	}
+	.slider{
+		width: 700px;
+		height: 400px;
+		overflow: hidden;
+		border: 10px solid #00ADB5;
+	}
+	.slider{
+		position:absolute;
+		top:50%;
+		left:50%;
+		transform: translate(-50%, -50%);/*выравнивание слайдера по центру*/
+	} 
+	.navig{ /*лабл кнопки*/
+		display:flex;
+		position:absolute;
+		bottom: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.bar{	/*параметры кнопки*/
+		height: 8px;
+		width: 30px;
+		margin: 6px;
+		cursor: pointer;
+		background-color: #ddd;
+		border-radius: 25%;
+		transition: all .4s ease;
+	}
+	.bar:hover{
+		opacity: 0.8;
+		transform: scale(1.1);	
+	}
+	input[name="r"] { /*скрытые радио кнопки*/
+		position: absolute;
+		visibility: hidden;
+	}
+	.slides {
+		display: flex;
+		width: 400%;
+		height: 100%;
+	}
+	.slide{
+		width: 25%;
+		transition: all .7s ease;
+	}
+	.slide img {
+		width: 100%;
+		height: 100%;
+	}
+	.descriptionn{
+	margin-top: 600px;
+	font-family: FreeMono, monospace;
+	font-size: 1.1em;
+	z-index:1;
+	justify-content:center;
+	line-height: 1;
+	display: block;
+	}
+	.block_about{
+		display: flex;
+		background: #00ADB5;
+		height: 600px;
+		width: 900px;
+		z-index: 5;
+		border-radius: 15%;
+		margin-left: 0;
+		margin-top: 50px;
+		border: 10px solid #EEEEEE;
+	}
+	#second_part{
+		margin-left: 450px;
+		margin-top: 650px;
+		font-family: FreeMono, monospace;
+		font-size: 3em;
+		color: #EEEEEE;
+		border: 10px dotted #00ADB5;
+		width: 135px;
+	}
+	.help{
+		margin-left: 400px;
+		height: 100px;
+		color:#EEEEEE;
+		font-family: FreeMono, monospace;
+		font-size: 3em;
+		font-weight: bold;
+	}
+
+	.donat{
+		margin-left: -600px;
+		text-align: center;
+		color:#222831;
+		margin-top: 100px;
+		font-family: FreeMono, monospace;
+		font-size: 1.5em;
+		display: block;
+		z-index: 2;
+	}
+	.donat_but{
+		color: #EEEEEE;
+		background-color: #00ADB5;
+		z-index: 3;
+		margin-left: -530px;
+		height: 40px;
+		width: 500px;
+		border: 5px solid #222831;
+		border-radius: 20%;
+	}
+	.donat_but:hover{
+		color: #222831;
+		background-color: #EEEEEE; 
+		border: 5px solid #222831;
+		cursor: pointer;
+	}
+	.final_picture{
+		height: 55%;
+		width: 60%;
+		margin-left: -80px;
+	}	
+	#third_part{
+	margin-top: 200px;
+	align-items: center;
+	font-family: FreeMono, monospace;
+	font-size: 1.5em;
+	justify-content: space-between;
+	background-color: #00ADB5;
+	color: white;
+	bottom: 0;
+	z-index: 7;
+	height: 150px;
+	width: 1000px;
+	bottom: 0;
+	}
 }
