@@ -39,7 +39,7 @@ body{
 	top: 0;
 	
 }
-#yogurt {
+.yogurt {
 	color: #EEEEEE;
 	font-family: FreeMono, monospace;
 }
@@ -101,7 +101,7 @@ body{
 @media (max-width: 779px) {
 	.burgerMenu {display: flex;}
 	
-	#yogurt{
+	.yogurt{
 		width: 80%;
 	}
 	#main, #about, #contact{
@@ -129,6 +129,7 @@ body{
 		color: #EEEEEE; 
 		
 	}
+
 }
 /*слайдер*/
 #first_part{
@@ -148,8 +149,8 @@ body{
 	position:absolute;
 	top:50%;
 	left:50%;
-	transform: translate(-50%, -50%);
-}
+	transform: translate(-50%, -50%);/*выравнивание слайдера по центру*/
+} 
 .navig{ /*лабл кнопки*/
 	display:flex;
 	position:absolute;
@@ -204,21 +205,23 @@ input[name="r"] { /*скрытые радио кнопки*/
 	margin-top: 700px;
 	font-family: FreeMono, monospace;
 	font-size: 1.5em;
+	z-index:2;
+	line-height: 1.2;
 	
 }
-#state_yogurt{
+.state_yogurt{
 	text-align:center;
 	font-family: FreeMono, monospace;
 	text-decoration: underline;
 	font-size: 3em;
 }
 /*блок о нас*/
-#block_about{
+.block_about{
 	display: flex;
 	background: #00ADB5;
 	height: 700px;
 	width: 1100px;
-	position: absolute;
+	z-index: 5;
 	border-radius: 15%;
 	margin-left: 350px;
 	margin-top: 50px;
@@ -234,7 +237,7 @@ input[name="r"] { /*скрытые радио кнопки*/
 	border: 10px dotted #00ADB5;
 	width: 135px;
 }
-#help{
+.help{
 	margin-left: 450px;
 	height: 100px;
 	color:#EEEEEE;
@@ -243,7 +246,7 @@ input[name="r"] { /*скрытые радио кнопки*/
 	font-weight: bold;
 }
 
-#donat{
+.donat{
 	margin-left: -600px;
 	text-align: center;
 	color:#222831;
@@ -253,7 +256,7 @@ input[name="r"] { /*скрытые радио кнопки*/
 	display: block;
 	z-index: 2;
 }
-#donat_but{
+.donat_but{
 	color: #EEEEEE;
 	background-color: #00ADB5;
 	z-index: 3;
@@ -263,13 +266,13 @@ input[name="r"] { /*скрытые радио кнопки*/
 	border: 5px solid #222831;
 	border-radius: 20%;
 }
-#donat_but:hover{
+.donat_but:hover{
 	color: #222831;
 	background-color: #EEEEEE; 
 	border: 5px solid #222831;
 	cursor: pointer;
 }
-#final_picture{
+.final_picture{
 	height: 55%;
 	width: 60%;
 	margin-left: -80px;
@@ -277,7 +280,8 @@ input[name="r"] { /*скрытые радио кнопки*/
 /*контакты*/
 
 #third_part{
-	margin-top: 1200px;
+	margin-top: 100px;
+	
 	align-items: center;
 	font-family: FreeMono, monospace;
 	font-size: 2em;
