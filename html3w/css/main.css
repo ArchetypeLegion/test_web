@@ -298,7 +298,6 @@ input[name="r"] { /*скрытые радио кнопки*/
 		margin-left: 220px;
 		font-size: 1.5em;
 		color: #EEEEEE;
-		flex-wrap: wrap;
 		text-align: center;
 		font-family: FreeMono, monospace;
 	}
